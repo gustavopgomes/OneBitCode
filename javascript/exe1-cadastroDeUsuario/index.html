@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuario</title>
+</head>
+<body>
+    <h1>Cadastro de Usuario</h1>
+
+    <script>
+        let nome = prompt("Qual o seu nome?")
+        let sobrenome = prompt("E o seu sobrenome?")
+        let atuacao = prompt("em que área voce esta?")
+        let anoNascimento = prompt("ano de nascimento:")
+        let nascimento = parseFloat(anoNascimento)
+        let idade = 2024 - nascimento
+
+        alert(`Dados do recruta: ` + 
+        "nome: " + nome +
+        "Sobrenome: " + sobrenome +
+        "Campo de estudo: " + atuacao +
+        "Idade: " + idade)
+    </script>
+</body>
+</html>
