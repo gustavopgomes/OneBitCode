@@ -22,17 +22,18 @@ switch (opcoes) {
         alert("Convertendo " + valorMetros + " metros, temos " + result3 + " decimetros.")
         break;
     case 4:
-        let result4 = valorMetros * 1000
-        alert("Convertendo " + valorMetros + " metros, temos " + result4 + " milimetros.")
+        let result4 = valorMetros / 10
+        alert("Convertendo " + valorMetros + " metros, temos " + result4 + " decametro.")
         break;
     case 5:
-        let result5 = valorMetros * 1000
-        alert("Convertendo " + valorMetros + " metros, temos " + result5 + " milimetros.")
+        let result5 = valorMetros / 100
+        alert("Convertendo " + valorMetros + " metros, temos " + result5 + " hectometro.")
         break;
     case 6:
-        let result6 = valorMetros * 1000
-        alert("Convertendo " + valorMetros + " metros, temos " + result6 + " milimetros.")
+        let result6 = valorMetros / 1000
+        alert("Convertendo " + valorMetros + " metros, temos " + result6 + " quilometros.")
         break;
     default:
+        alert("Opção invalida.")
         break;
 }
