@@ -6,23 +6,29 @@ do {
 
     switch (menu) {
         case "1":
-            let name = prompt("Qual o nome do proprietario?")
-            let quartos = prompt("Qual a quantidade de quartos da casa?")
-            let banheiros = prompt("Qual a quantidade de banheiros?")
-            let garagem = prompt("Possui garagem?")
+            let imovel = {}
 
-            name.push(imoveis)
-            quartos.push(imoveis)
-            banheiros.push(imoveis)
-            garagem.push(imoveis)
+            imovel.proprietario = prompt("Qual o nome do proprietario?")
+            imovel.quartos = prompt("Qual a quantidade de quartos da casa?")
+            imovel.banheiros = prompt("Qual a quantidade de banheiros?")
+            imovel.garagem = prompt("Possui garagem?")
+
+            const confirm = confirm("Salvar este imovel?\n" + "Proprietario: " + imovel.proprietario + "\nQuartos: " + imovel.quartos + "\nBanheiros: " + imovel.banheiros + "\nPossui garagem: " + imovel.garagem)
+
+            if (confirm){
+                imoveis.push(imovel)
+            }
             break;
         case "2":
-        alert("Imoveis salvos:\n" + imoveis)
+            for (let i = 0; i < imoveis.length; i++){
+                alert("Imovel " (i+1) + "\nProprietario: " + imoveis[i].proprietario + "\nQuartos: " + imovel[i].quartos + "\nBanheiros: " + imovel[i].banheiros + "\nPossui garagem: " + imovel[i].garagem)
+            }
             break
         case "3":
         alert("Saindo")
             break
         default:
+            alert("Invalido.")
             break;
     }
 } while (menu !== "3")
