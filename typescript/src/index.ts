@@ -24,4 +24,8 @@ function accelerate(targetSpeed:number, spaceship: {name: string, speed:number})
 const spaceshipName = prompt('Insira o nome da nave a ser enviada.')
 const spaceshipCapitain = prompt('Insira o nome do capitão da nave.')
 
-sendSPaceship(spaceshipName, spaceshipCapitain)
+const currentShip = sendSPaceship(spaceshipName, spaceshipCapitain)
+
+const speed = Number(prompt("Insira a valociade para qual deseja acelerar."))
+
+accelerate(speed, currentShip)
