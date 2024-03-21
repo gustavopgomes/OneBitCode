@@ -37,12 +37,40 @@ function addPlayer() {
         let confirmation = confirm("Deseja escalar esse jogador?");
         if (confirmation) {
             let lista = document.getElementById('listPlayers')
-            
-            console.log("Jogador escalado!");
+            const ul = document.createElement('ul');
+
+            const nameLi = document.createElement('li');
+            nameLi.innerText = nameInput.value
+            ul.appendChild(nameLi)
+
+            const position = document.createElement('li')
+            position.innerText = positionInput.value
+            ul.appendChild(position)
+
+            const number = document.createElement('li')
+            number.innerText = numberInput.value
+            ul.appendChild(number)
+
+            lista.append(ul)
+
+            nameInput.value = ''
+            positionInput.value = ''
+            numberInput.value = ''
+            alert("Jogador escalado!");
         } else {
-            console.log("Operação cancelada.");
+            alert("Operação cancelada.");
         }
     });
 
     listPlayer.append(h3, ul);
+}
+
+function removePlayer(){
+    const numberToRemove = Number(prompt('Qual o numero do jogador que deseja remover'))
+
+    if (numberToRemove == listPlayer.numberInput.value) {
+        alert('deuc certo')
+    } else {
+        
+    }
 }
