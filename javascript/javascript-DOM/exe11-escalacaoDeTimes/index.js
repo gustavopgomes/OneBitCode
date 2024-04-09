@@ -34,7 +34,7 @@ function addPlayer() {
     btnPlayer.innerText = "Escalar";
     ul.appendChild(btnPlayer);
     btnPlayer.addEventListener("click", function() {
-        let confirmation = confirm("Deseja escalar esse jogador?");
+        let confirmation = confirm("Deseja escalar esse jogador?");3
         if (confirmation) {
             let lista = document.getElementById('listPlayers')
             const ul = document.createElement('ul');
