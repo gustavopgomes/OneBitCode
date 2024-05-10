@@ -37,3 +37,28 @@ function calculate(){
     const result = eval(input.value)
     resultInput.value = result
 }
+
+document.getElementById('copyToClipboard').addEventListener('click', function(ev){
+    const button = ev.currentTarget
+    if (button.innerText === 'Copy'){
+        button.innerText = 'Copied!'
+        button.classList.add('Success')
+        navigator.clipboard.writeText(resultInput.value)
+    }
+})
+
+document.getElementById('themeSwitcher').addEventListener('click', function(){
+    if (main.dataset.theme === 'dark'){
+        root.style.setProperty('--bg-color', '#f1f5f9')
+        root.style.setProperty('--border-color', '#aaa')
+        root.style.setProperty('--font-color', '#212529')
+        root.style.setProperty('--primary-color', '#26834a')
+        main.dataset.theme = 'light'
+    } else {
+        root.style.setProperty('--bg-color', '212529')
+        root.style.setProperty('--border-color', '#666')
+        root.style.setProperty('--font-color', '#f1f5f9')
+        root.style.setProperty('--primary-color', '#4dff91')
+        main.dataset.theme = 'dark'
+    }
+})
