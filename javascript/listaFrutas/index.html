@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="index.js" defer></script>
     <style>
         body{
             margin: 0px;
@@ -30,13 +31,14 @@
     <main>
         <h1>Lista Frutas/Verduras</h1>
 
+        <button id="sessionBtn">Salvar</button>
         <table>
             <tr>
                 <td>Acerola</td>
-                <td>R$ 6,50</td>
+                <td> <input type="text" id="session"></td>
 
                 <td>Ameixa</td>
-                <td>R$ 27,00</td>
+                <td> <input type="text" id="session"></td>
             </tr>
             <tr>
                 <td>Brocolis</td>
@@ -117,5 +119,21 @@
             </tr>
         </table>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+    const input = document.getElementById('session')
+    const savedValue = localStorage.getItem('text')
+    if (savedValue){
+        input.value = savedValue
+    }
+})
+
+document.getElementById('sessionBtn').addEventListener('click', function(){
+    const input = document.getElementById('session')
+    localStorage.setItem('text', input.value)
+    alert('salvo')
+})
+    </script>
 </body>
 </html>
