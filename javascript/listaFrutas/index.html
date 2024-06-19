@@ -8,132 +8,205 @@
     <style>
         body{
             margin: 0px;
-            background-color: #f4f4f4;
+            background-color: #1F2739;
             width: 400px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-weight: 100;
         }
+        main {
+            width: 100%;
+            max-width: 400px; /* Adicionado para definir um limite de largura para o conteúdo principal */
+            display: flex;
+            flex-direction: column;
+            align-items: center;}
         table{
             border-collapse: collapse;
-            width: 300px;
-            border-collapse: collapse;
+            width: 100%;
+            max-width: 300px;
             box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            border-radius: 15px;
             overflow: hidden;
+            background-color: white;
+            margin: 20px 0;
         }
         td{
             border: 1px solid black;
             padding: 8px;
-            
+        }
+        h1{
+            padding-top: 40px;
+            color: #47AEDF;
+        }
+        input{
+            width: 70px;
+            border: none;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        .input-text{
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.384);
+        }
+        td{
+            color: #D05F70;
+        }
+        button{
+            border-radius: 20px;
+            padding: 10px;
+            background-color: #FFF842;
+            cursor: pointer;
+        }
+        tr:nth-child(even) {
+            background-color: #2C3446;
+        }
+        tr:nth-child(odd) {
+            background-color: #323C50;
         }
     </style>
 </head>
 <body>
     <main>
-        <h1>Lista Frutas/Verduras</h1>
+        <h1>Frutas/Verduras</h1>
 
         <button id="sessionBtn">Salvar</button>
         <table>
             <tr>
                 <td>Acerola</td>
-                <td> <input type="text" id="session"></td>
+                <td> <input type="text" class="input-text"></td>
 
+                <td>Cebola</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
                 <td>Ameixa</td>
-                <td> <input type="text" id="session"></td>
-            </tr>
-            <tr>
-                <td>Brocolis</td>
-                <td>R$ -</td>
-
-                <td>Beterraba</td>
-                <td>R$ 9,00</td>
-            </tr>
-            <tr>
-                <td>Colve Flor</td>
-                <td>R$ -</td>
+                <td> <input type="text" class="input-text"></td>
 
                 <td>Colve Manteiga</td>
-                <td>R$ 2,00</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Abacaxi</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Jerimun</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
                 <td>Alface</td>
-                <td>R$ 5,00</td>
+                <td> <input type="text" class="input-text"></td>
 
-                <td>Tomate</td>
-                <td>R$ 10,50</td>
+                <td>macaxeira</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
                 <td>Alho</td>
-                <td>R$ 32,00</td>
-
-                <td>Cebola</td>
-                <td>R$ 9,00</td>
-            </tr>
-            <tr>
-                <td>Pera</td>
-                <td>R$ -</td>
+                <td> <input type="text" class="input-text"></td>
 
                 <td>Manga</td>
-                <td>R$ 7,00</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
                 <td>Abacate</td>
-                <td>R$ 8.00</td>
-
-                <td>Batata Doce</td>
-                <td>R$ 6,00</td>
-            </tr>
-            <tr>
-                <td>Macacheira</td>
-                <td>R$ 6,00</td>
+                <td> <input type="text" class="input-text"></td>
 
                 <td>Maracujá</td>
-                <td>R$ 10,00</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
-                <td>Pimentão</td>
-                <td>R$ 9,50</td>
+                <td>Brocolis</td>
+                <td> <input type="text" class="input-text"></td>
 
-                <td>Abacaxi</td>
-                <td>R$ 6,00</td>
+                <td>Milho</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Beterraba</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>pera</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Batata</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Pimenão</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Batata Doce</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Tomate</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
                 <td>Cenoura</td>
-                <td>R$ 10,00</td>
-
-                <td>Batata</td>
-                <td>R$ 11,00</td>
-            </tr>
-            <tr>
-                <td>Pera</td>
-                <td>R$ -</td>
+                <td> <input type="text" class="input-text"></td>
 
                 <td>Kiwi</td>
-                <td>R$ -</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
-                <td>Uva</td>
-                <td>R$ -</td>
+                <td>Colve Flor</td>
+                <td> <input type="text" class="input-text"></td>
 
-                <td>Milho</td>
-                <td>R$ -</td>
+                <td>Uva</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Gengibre</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Pimentinha</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Coco verde</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Coco Seco</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Pitaya</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Repolho</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Maxixe/Quiabo</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td></td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
         </table>
     </main>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function(){
-    const input = document.getElementById('session')
-    const savedValue = localStorage.getItem('text')
-    if (savedValue){
-        input.value = savedValue
-    }
-})
+    document.addEventListener('DOMContentLoaded', function(){
+        const inputs = document.querySelectorAll('.input-text');
+        inputs.forEach((input, index) => {
+            const savedValue = localStorage.getItem(`input-${index}`);
+            if (savedValue) {
+                input.value = savedValue;
+            }
+        });
 
-document.getElementById('sessionBtn').addEventListener('click', function(){
-    const input = document.getElementById('session')
-    localStorage.setItem('text', input.value)
-    alert('salvo')
-})
+        document.getElementById('sessionBtn').addEventListener('click', function(){
+            inputs.forEach((input, index) => {
+                localStorage.setItem(`input-${index}`, input.value);
+            });
+            alert('Todos os textos foram salvos');
+        });
+    });
     </script>
 </body>
 </html>
